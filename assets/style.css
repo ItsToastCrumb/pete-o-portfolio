@@ -1,0 +1,21 @@
+:root {
+  --background: azure;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 1200px;
+}
+
+header {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}

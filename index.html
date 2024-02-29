@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pete's Portfolio</title>
-    <link rel="stylesheet" href="./Assets/reset.css" />
+    <!-- <link rel="stylesheet" href="./Assets/reset.css" /> -->
     <link rel="stylesheet" href="./Assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,41 +19,87 @@
       <img class="avatar" src="" alt="" />
       <nav>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <body>
-      <main>
-        <h2>Work</h2>
-        <article id="projectOne">
-          <h3>First Project</h3>
-          <img src="" alt="" />
-        </article>
-        <article id="projectTwo">
-          <h3>Second Project</h3>
-          <img src="" alt="" />
-        </article>
-        <article id="projectThree">
-          <h3>Third Project</h3>
-          <img src="" alt="" />
-        </article>
-        <article id="projectFour">
-          <h3>Fourth Project</h3>
-          <img src="" alt="" />
-        </article>
-        <article id="projectFive">
-          <h3>Fifth Project</h3>
-          <img src="" alt="" />
-        </article>
-      </main>
+    <main>
+      <div class="work">
+        <h2 id="work">Work</h2>
+        <section class="workBody">
+          <a href="#">
+            <article>
+              <div
+                class="workLabel"
+                alt="image of three hands as rock, paper, and scissors"
+              >
+                <h3>Rock, Paper, Scissors</h3>
+                <p>"Code Used"</p>
+              </div>
+              <figure id="projectOne"></figure>
+            </article>
+          </a>
+          <a href="#">
+            <article>
+              <div class="workLabel" alt="calculator">
+                <h3>Second Project</h3>
+                <p>"Code Used"</p>
+              </div>
+              <figure id="projectTwo"></figure>
+            </article>
+          </a>
+          <a href="#">
+            <article>
+              <div class="workLabel" alt="generic image of coding">
+                <h3>Third Project</h3>
+                <p>"Code Used"</p>
+              </div>
+              <figure id="projectThree"></figure>
+            </article>
+          </a>
+          <a href="#">
+            <article>
+              <div class="workLabel" alt="generic image of coding">
+                <h3>Fourth Project</h3>
+                <p>"Code Used"</p>
+              </div>
+              <figure id="projectFour"></figure>
+            </article>
+          </a>
+          <a href="#">
+            <article>
+              <div
+                class="workLabel"
+                alt="green binary falling from top to bottom"
+              >
+                <h3>Fifth Project</h3>
+                <p>"Code Used"</p>
+              </div>
+              <figure id="projectFive"></figure>
+            </article>
+          </a>
+        </section>
+      </div>
       <aside>
-        <h2>About Me</h2>
+        <h2 id="about">About Me</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe atque
+          reprehenderit illo eum amet, quia architecto et fuga, totam magni quas
+          esse, ratione perferendis repellat tempore quos pariatur provident
+          animi?
+        </p>
       </aside>
-      <section class="contact">Contact Me</section>
-    </body>
-    <footer></footer>
+    </main>
   </body>
+  <footer class="contact">
+    <h2 id="contact">Contact Me</h2>
+    <section id="contactInfo">
+      <a href="#contactInfo">555-5555</a>
+      <a href="#contactInfo">somebody@someplace.com</a>
+      <a href="#contactInfo">GitHub</a>
+      <a href="#contactInfo">LinkedIn</a>
+    </section>
+  </footer>
 </html>

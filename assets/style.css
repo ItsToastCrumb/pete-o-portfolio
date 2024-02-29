@@ -1,21 +1,239 @@
+/*Setting up custom properties to establish a uniform color theme throughout the webpage*/
 :root {
-  --background: azure;
+  --background: #141479;
+  --text: lightskyblue;
+  --border: deepskyblue;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/*Establishing uniform font, general background color, and size of the webpage*/
 body {
-  background-color: var(--background);
-  font-family: "Ubuntu", sans-serif;
+  background-color: azure;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  max-width: 1200px;
+  margin: 0;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--text);
 }
 
-nav {
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  font-size: x-large;
+  margin: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: lightskyblue;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 1% 1% 1% 10%;
+}
+
+article {
+  position: relative;
+}
+
+h3 {
+  margin: 10px 20px 2.5px 0px;
+}
+
+aside {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-top: 5px solid var(--border);
+}
+
+.workLabel {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 30px;
+  left: 15px;
+  padding: 0px 15px;
+  margin: 0px;
+  width: auto;
+  background-color: var(--border);
+  border: 2px solid var(--text);
+  color: black;
+}
+
+.workLabel p {
+  margin: 2.5px 20px 10px 0px;
+}
+
+.work {
+  display: flex;
+  width: 100%;
+}
+
+.workBody {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-left: 5px solid var(--border);
+  padding-left: 5px;
+  width: 85%;
+}
+
+#contactInfo a {
+  font-size: 20px;
+  margin: 0 40px;
+}
+
+#work {
+  margin: 15px;
+  font-size: 300%;
+}
+
+#projectOne {
+  background: linear-gradient(to left, var(--border), var(--background));
+  border: 2px solid var(--text);
+  width: 100%;
+  height: 450px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#projectTwo,
+#projectThree,
+#projectFour,
+#projectFive {
+  background: linear-gradient(to left, var(--border), var(--background));
+  border: 2px solid var(--text);
+  width: 50%;
+  height: 200px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#projectOne::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  background-image: url(./rockpaperscissors.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--text);
+}
+
+#projectTwo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  background-image: url(./calculator.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--text);
+}
+
+#projectThree::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  background-image: url(./genericcodingone.png);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--text);
+}
+
+#projectFour::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  background-image: url(./genericcodingtwo.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--text);
+}
+
+#projectFive::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  background-image: url(./matrix.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--text);
+}
+
+#projectOne:hover::before,
+#projectTwo:hover::before,
+#projectThree:hover::before,
+#projectFour:hover::before,
+#projectFive:hover::before {
+  opacity: 1;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid var(--border);
+  padding-bottom: 15px;
+  margin: 0px 15px;
 }

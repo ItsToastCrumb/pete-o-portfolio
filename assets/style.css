@@ -19,6 +19,7 @@ body {
   margin: 0;
 }
 
+/*Spacing out the header so that my name is all the way to the left and the nav bar will be all the way to the right*/
 header {
   display: flex;
   justify-content: space-between;
@@ -27,20 +28,28 @@ header {
   color: var(--text);
 }
 
+header img {
+  height: 100px;
+  width: auto;
+}
+
 header nav {
   display: flex;
 }
 
+/*Removing the bullet points in the unordered list*/
 header nav ul {
   display: flex;
   list-style-type: none;
 }
 
+/*Adjusting the font size and space between the list items for better readability*/
 header nav ul li {
   font-size: x-large;
   margin: 10px;
 }
 
+/*Removing the underline on the nav bar anchors and setting the permanent color to light sky blue*/
 li a {
   text-decoration: none;
   color: lightskyblue;
@@ -50,6 +59,7 @@ main {
   display: flex;
   justify-content: space-between;
   height: 100%;
+  width: auto;
   margin: 1% 1% 1% 10%;
 }
 
@@ -102,6 +112,7 @@ footer {
 
 .work {
   display: flex;
+  justify-content: start;
   width: 100%;
 }
 
@@ -112,6 +123,17 @@ footer {
   border-left: 5px solid var(--border);
   padding-left: 5px;
   width: 85%;
+}
+
+.workGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.workGrid a {
+  width: 50%;
 }
 
 #contactInfo a {
@@ -140,7 +162,7 @@ footer {
 #projectFive {
   background: linear-gradient(to left, var(--border), var(--background));
   border: 2px solid var(--text);
-  width: 50%;
+  width: 100%;
   height: 200px;
   margin: 20px;
   position: relative;

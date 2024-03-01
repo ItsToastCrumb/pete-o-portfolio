@@ -28,6 +28,7 @@ header {
   color: var(--text);
 }
 
+/*Resizing avatar to fit in header*/
 header img {
   height: 100px;
   width: auto;
@@ -63,6 +64,7 @@ main {
   margin: 1% 1% 1% 10%;
 }
 
+/*Setting article's position to relative in order to move the label into the element below*/
 article {
   position: relative;
 }
@@ -71,6 +73,7 @@ h3 {
   margin: 10px 20px 2.5px 0px;
 }
 
+/*Moving the about section to the side of the webpage*/
 aside {
   display: flex;
   flex-wrap: wrap;
@@ -90,6 +93,7 @@ footer {
   border-top: 5px solid var(--border);
 }
 
+/*Adjusting size and position of the label for projects so it sits within the background image and isn't intrusive*/
 .workLabel {
   position: absolute;
   z-index: 1;
@@ -125,6 +129,7 @@ footer {
   width: 85%;
 }
 
+/*Splitting projects 2-5 into another class in order to resize them into a smaller grid*/
 .workGrid {
   display: flex;
   flex-wrap: wrap;
@@ -146,6 +151,7 @@ footer {
   font-size: 300%;
 }
 
+/*Setting up the first project's size and ability to utilize the opacity transition when hovered over*/
 #projectOne {
   background: linear-gradient(to left, var(--border), var(--background));
   border: 2px solid var(--text);
@@ -156,6 +162,7 @@ footer {
   overflow: hidden;
 }
 
+/*Setting up the size and ability to utilize the opacity transition when hovered over for projects 2-5*/
 #projectTwo,
 #projectThree,
 #projectFour,
@@ -169,6 +176,7 @@ footer {
   overflow: hidden;
 }
 
+/*Setting up the background image for the transition and adjusting opacity for slight visibility of the image*/
 #projectOne::before {
   content: "";
   position: absolute;
@@ -244,6 +252,7 @@ footer {
   border: 2px solid var(--text);
 }
 
+/*Background image will transition into a clear image*/
 #projectOne:hover::before,
 #projectTwo:hover::before,
 #projectThree:hover::before,
@@ -252,6 +261,7 @@ footer {
   opacity: 1;
 }
 
+/* Centering and creating a dividing border on the bottom of the header for the About Me sidebar */
 #about {
   display: flex;
   justify-content: center;

@@ -139,6 +139,11 @@ footer {
 
 .workGrid a {
   width: 50%;
+  min-width: 350px;
+}
+
+#workPrimary {
+  min-width: 650px;
 }
 
 #contactInfo a {
@@ -155,8 +160,9 @@ footer {
 #projectOne {
   background: linear-gradient(to left, var(--border), var(--background));
   border: 2px solid var(--text);
-  width: 100%;
+  width: auto;
   height: 450px;
+  min-width: 200px;
   margin: 20px;
   position: relative;
   overflow: hidden;
@@ -169,8 +175,9 @@ footer {
 #projectFive {
   background: linear-gradient(to left, var(--border), var(--background));
   border: 2px solid var(--text);
-  width: 100%;
+  width: auto;
   height: 200px;
+  min-width: 100px;
   margin: 20px;
   position: relative;
   overflow: hidden;
@@ -268,4 +275,15 @@ footer {
   border-bottom: 5px solid var(--border);
   padding-bottom: 15px;
   margin: 0px 15px;
+}
+
+/*Change main flex direction to column-reverse for smaller screens*/
+@media screen and (max-width: 992px) {
+  main {
+    flex-direction: column-reverse;
+    margin: 1%;
+  }
+  aside {
+    max-width: 100%;
+  }
 }

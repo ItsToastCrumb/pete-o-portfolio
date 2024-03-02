@@ -10,7 +10,7 @@ This page makes use of flexbox in CSS as well as opacity transitions for the pro
 
 GitHub Repository: https://github.com/ItsToastCrumb/pete-o-portfolio
 
-GitPage:
+GitPage: https://itstoastcrumb.github.io/pete-o-portfolio/
 
 ## Screenshot
 
